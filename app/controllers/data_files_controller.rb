@@ -82,9 +82,12 @@ class DataFilesController < ApplicationController
   end
   def uploadFile
     @name = params[:data_file][:title]
-    unless(params[:small_banner].nil? && params[:large_banner].nil?)
-      post = DataFile.save( params[:small_banner],params[:large_banner],@name)
-      create
+    if(@name.empty?)
+    else
+      unless(params[:small_banner].nil? && params[:large_banner].nil?)
+        post = DataFile.save( params[:small_banner],params[:large_banner],@name)
+        create
+      end
     end
   end
 end

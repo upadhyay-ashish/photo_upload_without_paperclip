@@ -1377,3 +1377,1136 @@ Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:26:47) [GET
 Rendering template within layouts/data_files
 Rendering data_files/index
 Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-21 20:35:12) [GET]
+  [4;35;1mDataFile Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 78ms (View: 15, DB: 10) | 200 OK [http://localhost/data_files/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-21 20:37:21) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.6116.0>}, "data_file"=>{"title"=>"", "description"=>""}}
+  [4;36;1mDataFile Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Create (0.0ms)[0m   [0;1mINSERT INTO `data_files` (`updated_at`, `title`, `description`, `created_at`) VALUES('2011-07-21 15:07:21', '', '', '2011-07-21 15:07:21')[0m
+  [4;35;1mSQL (74.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3003/data_files/45
+Completed in 142ms (DB: 87) | 302 Found [http://localhost/data_files/uploadFile]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 20:37:22) [GET]
+  Parameters: {"id"=>"45"}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (5.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 45) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 28ms (View: 5, DB: 13) | 200 OK [http://localhost/data_files/45]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 20:37:22) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 20:40:11) [GET]
+  Parameters: {"id"=>"45"}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (4.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 45) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 61ms (View: 4, DB: 13) | 200 OK [http://localhost/data_files/45]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 20:40:11) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-21 20:40:14) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.6116.3>}, "data_file"=>{"title"=>"", "description"=>""}}
+  [4;36;1mDataFile Columns (11.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 54ms (View: 14, DB: 12) | 200 OK [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-21 20:40:46) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "data_file"=>{"title"=>"", "description"=>""}}
+Rendering template within layouts/data_files
+Rendering data_files/uploadFile
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:42:03) [GET]
+  [4;35;1mDataFile Load (0.0ms)[0m   [0mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Completed in 25ms (View: 7, DB: 8) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-21 20:42:10) [GET]
+  Parameters: {"id"=>"45"}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (5.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 45) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 28ms (View: 4, DB: 13) | 200 OK [http://localhost/data_files/45]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-21 20:42:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-21 20:42:12) [GET]
+  [4;35;1mDataFile Load (1.0ms)[0m   [0mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Completed in 26ms (View: 8, DB: 9) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-22 12:15:42) [GET]
+  [4;35;1mDataFile Columns (287.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 4482ms (View: 2728, DB: 287) | 200 OK [http://localhost/data_files/new]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-22 12:19:16) [GET]
+  [4;36;1mDataFile Load (71.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;35;1mDataFile Columns (72.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Completed in 184ms (View: 32, DB: 144) | 200 OK [http://localhost/data_files]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-22 12:19:18) [GET]
+  [4;36;1mDataFile Columns (13.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 75ms (View: 52, DB: 13) | 200 OK [http://localhost/data_files/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:19:27) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.0>}, "data_file"=>{"title"=>"", "description"=>""}}
+
+TypeError (can't convert Array into String):
+  app/models/data_file.rb:7:in `+'
+  app/models/data_file.rb:7:in `save'
+  app/controllers/data_files_controller.rb:86:in `uploadFile'
+
+Rendered rescues/_trace (89.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:19:49) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.2>}, "data_file"=>{"title"=>"", "description"=>""}}
+
+NoMethodError (private method `split' called for 76:Fixnum):
+  app/models/data_file.rb:6:in `save'
+  app/controllers/data_files_controller.rb:86:in `uploadFile'
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-22 12:20:16) [GET]
+  [4;35;1mDataFile Columns (13.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 75ms (View: 13, DB: 14) | 200 OK [http://localhost/data_files/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:20:20) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.4>}, "data_file"=>{"title"=>"", "description"=>""}}
+
+TypeError (can't convert nil into String):
+  app/models/data_file.rb:8:in `+'
+  app/models/data_file.rb:8:in `save'
+  app/controllers/data_files_controller.rb:86:in `uploadFile'
+
+Rendered rescues/_trace (115.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:20:38) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.0>}, "data_file"=>{"title"=>"", "description"=>""}}
+
+TypeError (can't convert nil into String):
+  app/models/data_file.rb:8:in `+'
+  app/models/data_file.rb:8:in `save'
+  app/controllers/data_files_controller.rb:86:in `uploadFile'
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:21:24) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.2>}, "data_file"=>{"title"=>"", "description"=>""}}
+
+TypeError (can't convert Array into String):
+  app/models/data_file.rb:8:in `+'
+  app/models/data_file.rb:8:in `save'
+  app/controllers/data_files_controller.rb:86:in `uploadFile'
+
+Rendered rescues/_trace (35.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:22:00) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.1>}, "data_file"=>{"title"=>"", "description"=>""}}
+  [4;36;1mDataFile Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 170ms (View: 14, DB: 14) | 200 OK [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:24:05) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.5>}, "data_file"=>{"title"=>"", "description"=>""}}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 120ms (View: 18, DB: 13) | 200 OK [http://localhost/data_files/uploadFile]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:24:56) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.0>}, "data_file"=>{"title"=>"", "description"=>""}}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 54ms (View: 12, DB: 12) | 200 OK [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:24:59) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.3>}, "data_file"=>{"title"=>"", "description"=>""}}
+  [4;35;1mDataFile Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 167ms (View: 12, DB: 14) | 200 OK [http://localhost/data_files/uploadFile]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-22 12:26:40) [GET]
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 29ms (View: 12, DB: 8) | 200 OK [http://localhost/data_files/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-22 12:26:42) [GET]
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 29ms (View: 12, DB: 8) | 200 OK [http://localhost/data_files/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:26:46) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.1>}, "data_file"=>{"title"=>"", "description"=>""}}
+  [4;36;1mDataFile Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 92ms (View: 13, DB: 15) | 200 OK [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:27:38) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.5>}, "data_file"=>{"title"=>"sadsad", "description"=>""}}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDataFile Create (91.0ms)[0m   [0mINSERT INTO `data_files` (`updated_at`, `title`, `description`, `created_at`) VALUES('2011-07-22 06:57:38', 'sadsad', '', '2011-07-22 06:57:38')[0m
+  [4;36;1mSQL (138.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/data_files/46
+Completed in 309ms (DB: 241) | 302 Found [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-22 12:27:39) [GET]
+  Parameters: {"id"=>"46"}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mDataFile Load (15.0ms)[0m   [0;1mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 46) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 63ms (View: 29, DB: 23) | 200 OK [http://localhost/data_files/46]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-22 12:27:39) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/sadsad.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-22 12:28:13) [GET]
+  [4;35;1mDataFile Load (1.0ms)[0m   [0mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;36;1mDataFile Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Completed in 27ms (View: 11, DB: 8) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-22 12:28:14) [GET]
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 30ms (View: 12, DB: 8) | 200 OK [http://localhost/data_files/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:28:18) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.0>}, "data_file"=>{"title"=>"", "description"=>""}}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 50ms (View: 13, DB: 11) | 200 OK [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:28:37) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "data_file"=>{"title"=>"", "description"=>""}}
+Rendering template within layouts/data_files
+Rendering data_files/uploadFile
+Completed in 44064ms (View: 41, DB: 1) | 200 OK [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:29:22) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.4>}, "data_file"=>{"title"=>"", "description"=>""}}
+  [4;35;1mDataFile Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 120ms (View: 12, DB: 11) | 200 OK [http://localhost/data_files/uploadFile]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:30:30) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.0>}, "data_file"=>{"title"=>"", "description"=>""}}
+  [4;36;1mDataFile Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 49ms (View: 13, DB: 13) | 200 OK [http://localhost/data_files/uploadFile]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-22 12:31:25) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"EQQVzUyzUsMTFIt0m827vMne5oxz9a+mOIKOwZm5it8=", "small_banner"=>{"datafile"=>#<File:C:/Users/ANKITG~1/AppData/Local/Temp/RackMultipart.1168.2>}, "data_file"=>{"title"=>"", "description"=>""}}
+Rendering template within layouts/data_files
+Rendering data_files/uploadFile
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/data_files/uploadFile]
+/!\ FAILSAFE /!\  Tue Jul 26 14:21:59 +0530 2011
+  Status: 500 Internal Server Error
+  no such file to load -- mysql
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:547:in `new_constants_in'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/mysql_adapter.rb:61:in `mysql_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Ruby187/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:28:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/session/cookie_store.rb:100:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/reloader.rb:34:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/static.rb:31:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/commands/server.rb:111
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Tue Jul 26 14:22:06 +0530 2011
+  Status: 500 Internal Server Error
+  no such file to load -- mysql
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:547:in `new_constants_in'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/mysql_adapter.rb:61:in `mysql_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Ruby187/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:28:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/session/cookie_store.rb:100:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/reloader.rb:34:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/static.rb:31:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/commands/server.rb:111
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Tue Jul 26 14:22:21 +0530 2011
+  Status: 500 Internal Server Error
+  no such file to load -- mysql
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:547:in `new_constants_in'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/mysql_adapter.rb:61:in `mysql_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Ruby187/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:28:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/session/cookie_store.rb:100:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/reloader.rb:34:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/static.rb:31:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/commands/server.rb:111
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Tue Jul 26 14:22:24 +0530 2011
+  Status: 500 Internal Server Error
+  no such file to load -- mysql
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:547:in `new_constants_in'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/mysql_adapter.rb:61:in `mysql_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Ruby187/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:28:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/session/cookie_store.rb:100:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/reloader.rb:34:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/static.rb:31:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/commands/server.rb:111
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Tue Jul 26 14:22:29 +0530 2011
+  Status: 500 Internal Server Error
+  no such file to load -- mysql
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:547:in `new_constants_in'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/mysql_adapter.rb:61:in `mysql_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Ruby187/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:28:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/session/cookie_store.rb:100:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/reloader.rb:34:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/static.rb:31:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/commands/server.rb:111
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Tue Jul 26 14:22:42 +0530 2011
+  Status: 500 Internal Server Error
+  no such file to load -- mysql
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:547:in `new_constants_in'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/mysql_adapter.rb:61:in `mysql_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Ruby187/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:28:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/session/cookie_store.rb:100:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/reloader.rb:34:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/static.rb:31:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/commands/server.rb:111
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Tue Jul 26 14:22:46 +0530 2011
+  Status: 500 Internal Server Error
+  no such file to load -- mysql
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:547:in `new_constants_in'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/dependencies.rb:182:in `require'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/mysql_adapter.rb:61:in `mysql_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    C:/Ruby187/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:28:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/session/cookie_store.rb:100:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/reloader.rb:34:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/static.rb:31:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+    C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.9/lib/commands/server.rb:111
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+    C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+    script/server:3
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (68.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (253.0ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDataFiles (20110721074049)
+  [4;36;1mSQL (67.0ms)[0m   [0;1mCREATE TABLE `data_files` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (22.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110721074049')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `data_files`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `data_files`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-26 14:38:10) [GET]
+  [4;36;1mDataFile Load (1.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+Completed in 82ms (View: 72, DB: 1) | 200 OK [http://localhost/data_files]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-26 14:38:12) [GET]
+  [4;35;1mDataFile Columns (11.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 5548ms (View: 5528, DB: 11) | 200 OK [http://localhost/data_files/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-26 14:38:36) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"sdqUbieAi6Kno8517xJaUejUUidXi6cmfWFuXv810JA=", "small_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-1i8hvyx-0>}, "data_file"=>{"title"=>"None", "description"=>"Not Much"}}
+  [4;36;1mDataFile Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Create (0.0ms)[0m   [0;1mINSERT INTO `data_files` (`created_at`, `title`, `updated_at`, `description`) VALUES('2011-07-26 09:08:36', 'None', '2011-07-26 09:08:36', 'Not Much')[0m
+  [4;35;1mSQL (46.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/data_files/1
+Completed in 116ms (DB: 57) | 302 Found [http://localhost/data_files/uploadFile]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-26 14:38:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDataFile Columns (11.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (0.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 1) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 29ms (View: 10, DB: 12) | 200 OK [http://localhost/data_files/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-26 14:38:37) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/None.jpg" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#index (for 127.0.0.1 at 2011-07-26 14:38:46) [GET]
+  [4;36;1mDataFile Load (0.0ms)[0m   [0;1mSELECT * FROM `data_files` [0m
+Rendering template within layouts/data_files
+Rendering data_files/index
+  [4;35;1mDataFile Columns (12.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Completed in 32ms (View: 10, DB: 12) | 200 OK [http://localhost/data_files]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-26 14:59:04) [GET]
+  [4;36;1mDataFile Columns (11.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 117ms (View: 83, DB: 12) | 200 OK [http://localhost/data_files/new]
+  [4;35;1mSQL (8.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-26 17:37:38) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"sdqUbieAi6Kno8517xJaUejUUidXi6cmfWFuXv810JA=", "large_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-17qeoy0-0>}, "data_file"=>{"title"=>"", "description"=>""}}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (122.0ms)
+Rendered rescues/_request_and_response (18.0ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-26 17:37:49) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"sdqUbieAi6Kno8517xJaUejUUidXi6cmfWFuXv810JA=", "small_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-pzx7m6-0>}, "large_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-1m2pm4c-0>}, "data_file"=>{"title"=>"", "description"=>""}}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-26 17:38:07) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"sdqUbieAi6Kno8517xJaUejUUidXi6cmfWFuXv810JA=", "small_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-1wz2e3t-0>}, "large_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-1uzb0o4-0>}, "data_file"=>{"title"=>"", "description"=>""}}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (34.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-26 17:38:24) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"sdqUbieAi6Kno8517xJaUejUUidXi6cmfWFuXv810JA=", "small_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-1pcf9s-0>}, "large_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-1ojjcl6-0>}, "data_file"=>{"title"=>"as", "description"=>""}}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (73.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#new (for 127.0.0.1 at 2011-07-26 17:38:28) [GET]
+  [4;35;1mDataFile Columns (285.0ms)[0m   [0mSHOW FIELDS FROM `data_files`[0m
+Rendering template within layouts/data_files
+Rendering data_files/new
+Completed in 449ms (View: 78, DB: 286) | 200 OK [http://localhost/data_files/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-26 17:38:34) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"yKJEHxZkPB6fkWGSj9ePWygTArkiWYO93I2mORTni0c=", "small_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-8ozf49-0>}, "data_file"=>{"title"=>"asdasdsad", "description"=>""}}
+  [4;36;1mDataFile Columns (11.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (18.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Create (263.0ms)[0m   [0;1mINSERT INTO `data_files` (`created_at`, `title`, `updated_at`, `description`) VALUES('2011-07-26 12:08:34', 'asdasdsad', '2011-07-26 12:08:34', '')[0m
+  [4;35;1mSQL (94.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/data_files/2
+Completed in 504ms (DB: 386) | 302 Found [http://localhost/data_files/uploadFile]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-26 17:38:34) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mDataFile Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (74.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 2) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 97ms (View: 5, DB: 84) | 200 OK [http://localhost/data_files/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-26 17:38:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/asdasdsad.jpg" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-26 17:38:40) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"yKJEHxZkPB6fkWGSj9ePWygTArkiWYO93I2mORTni0c=", "small_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-1ix0yr7-0>}, "large_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-1gaosqu-0>}, "data_file"=>{"title"=>"asdasdsad", "description"=>""}}
+  [4;36;1mDataFile Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDataFile Create (1.0ms)[0m   [0;1mINSERT INTO `data_files` (`created_at`, `title`, `updated_at`, `description`) VALUES('2011-07-26 12:08:40', 'asdasdsad', '2011-07-26 12:08:40', '')[0m
+  [4;35;1mSQL (28.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/data_files/3
+Completed in 101ms (DB: 41) | 302 Found [http://localhost/data_files/uploadFile]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#show (for 127.0.0.1 at 2011-07-26 17:38:41) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mDataFile Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mDataFile Load (7.0ms)[0m   [0mSELECT * FROM `data_files` WHERE (`data_files`.`id` = 3) [0m
+Rendering template within layouts/data_files
+Rendering data_files/show
+Completed in 51ms (View: 4, DB: 38) | 200 OK [http://localhost/data_files/3]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-26 17:38:41) [GET]
+
+ActionController::RoutingError (No route matches "/images/banners/small/asdasdsad.jpg" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DataFilesController#uploadFile (for 127.0.0.1 at 2011-07-26 17:38:45) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"yKJEHxZkPB6fkWGSj9ePWygTArkiWYO93I2mORTni0c=", "small_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-6qfduk-0>}, "large_banner"=>{"datafile"=>#<File:C:/Users/ASHISH~1/AppData/Local/Temp/RackMultipart20110726-3616-1abauss-0>}, "data_file"=>{"title"=>"", "description"=>""}}
+Rendering template within layouts/data_files
+Rendering data_files/uploadFile
+Completed in 10ms (View: 8, DB: 1) | 200 OK [http://localhost/data_files/uploadFile]

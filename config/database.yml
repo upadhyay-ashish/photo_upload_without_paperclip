@@ -21,5 +21,5 @@ development:
   database: ks_upload
   pool: 5
   username: root
-  password: password
+  password: 
   host: localhost
